@@ -8,9 +8,10 @@ Created a 2 x 3 set of cards, each with a unique feater icon inserted using SVG 
 
 Also, added a custom css file for the complete site which can be found as `css/main.css`
 
-Also added support for a navigation bar with selection of current page highlighted.
+Also, added support for a navigation bar with selection of current page highlighted.
 
 ## Tech-stack
+
 - HTML5
 - Bootstrap CSS 4
-- Feather icons - https://feathericons.com
+- [Feather icons](https://feathericons.com)
