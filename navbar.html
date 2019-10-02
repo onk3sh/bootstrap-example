@@ -1,0 +1,41 @@
+<body>
+    <br/>
+    <ul class="nav nav-pills justify-content-center">
+        <li id="home" class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li id="home" class="nav-item">
+            <a class="nav-link" href="customer.html">Customer</a>
+        </li>
+        <li id="compliance" class="nav-item">
+            <a class="nav-link" href="compliance.html">Compliance</a>
+        </li>
+        <li id="operations" class="nav-item">
+            <a class="nav-link" href="operations.html">Operations</a>
+        </li>
+        <li id="partners" class="nav-item">
+            <a class="nav-link" href="partners.html">Partners</a>
+        </li>
+        <li id="financials" class="nav-item">
+            <a class="nav-link" href="financials.html">Financials</a>
+        </li>
+        <li id="people" class="nav-item">
+            <a class="nav-link" href="people.html">People</a>
+        </li>
+        <!-- <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
+        </li> -->
+    </ul>
+</body>
+
+<script>
+    $(function() {
+        var current = location.pathname.replace(/\//g, "");
+        $('ul.nav.nav-pills li a').each(function() {
+            var $this = $(this);
+            if ($this.attr('href').indexOf(current) !== -1) {
+                $this.addClass('active');
+            }
+        })
+    });
+</script>
